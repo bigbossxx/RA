@@ -1,13 +1,13 @@
 const express = require('express');
-const router = express.Router();
+const routes = express.Router();
 
 
-router.get('/', function(req,res) {
-    res.redirect('/about');
+routes.get('/', function(req,res) {
+    res.redirect('/about/index');
 });
 
-router.get('/home', function(req,res) {
-    res.render('home');
+routes.get('/home', function(req,res) {
+    res.render('home', {title: 'home'});
 });
 
-module.exports = router;
+module.exports = routes; 
