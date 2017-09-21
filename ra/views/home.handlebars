@@ -1,9 +1,16 @@
+{{#section 'header'}}
+    <h1>This is my Header Content</h1>
+{{/section}}
+
+<p>Proyecto de practica para crear gestor de post como reddit</p>
+
+
 <form
     method="post",
     action="/reg"
 >
     <label>user</label>
-    <input type='text' name="user">
+    <input type='text' name="user[name]">
     <label>pass</label>
     <input type='password' name="pass">
     <button type="submit">enviar</button>
